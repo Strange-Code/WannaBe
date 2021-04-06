@@ -5,25 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanna Be</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Wanna be</title>
 </head>
 
 <body>
+    <audio id="audio">
+        <source id="mp3Source" type="audio/mp3"></source>
+        Your browser does not support the audio format.
+    </audio>
+
     <div class="main">
-        <h1>¿Wanna Be?</h1>
-        <button id="yes" class="button">Si</button>
-        <button id="random" class="button">No</button>
+        <h1>¿Quieres salir conmigo?</h1>
+        <br><br>
+        <button id="yes" class="color1">Si</button>
+        <button id="random" class="color2">No</button>
     </div>
+
 
 
     <div class="message" id="message">
-        <h1>Hola soy un mensaje</h1>
-        <p>Hola soy un parrafo</p>
+        <h1>Es una cita <span class="icon solid fas fa-heart"></span></h1><br>
+        <p>Paso el link de zoom a las 8 PM </p><br>
         <button id="close" class="button">Cerrar</button>
     </div>
 
+    <footer id="footer">
+        <!-- MANTENER ESTE ENLACE PARA QUE MÁS PERSONAS PUEDAN APRENDER COMO TÚ ;) -->
+        <a target="_blank" href="https://strange-code.github.io/Links/"><span class="icon solid fab fa-code"></span></span> Development by StrangeCode</a>
+        <a>Copyright © 2020 Todos los derechos publicos.</a>
+    </footer>
+
+
 </body>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="assets/js/prefixfree.min.js"></script>
 <script src="assets/js/random.js"></script>

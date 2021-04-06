@@ -1,6 +1,9 @@
+@import url("fontawesome-all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-html {
+* {
     box-sizing: border-box;
+    text-decoration: none !important;
+    margin: 0;
 }
 
 body {
@@ -8,19 +11,11 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-.main {
-    width: 100%;
-    text-align: center;
-    padding: 10em 0em;
-    color: #FFFFFF;
-    font-size: 28px;
-}
-
-.button {
+button {
     display: inline-block;
     border-radius: 4px;
     background-color: #A9081C;
-    border: none;
+    border: 10px;
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
@@ -33,6 +28,61 @@ body {
     margin: 5px;
 }
 
+
+/* Icon */
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.icon>.label {
+    display: none;
+}
+
+.icon:before {
+    line-height: inherit;
+}
+
+.icon.solid:before {
+    font-weight: 900;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    padding: 10em 0em;
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+.color1 {
+    background-color: #9EED72;
+}
+
+.color2 {
+    background-color: #6AEBC3;
+}
+
 .random {
     position: absolute;
 }
@@ -42,12 +92,12 @@ body {
     position: absolute;
     left: 25%;
     top: 25%;
+    width: 50%;
     text-align: center;
     color: #FFFFFF;
     border-radius: 4px;
-    width: 50%;
     padding: 1em;
-    background-color: #716B6D;
+    background-color: #252526;
     z-index: 2;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     transition: all 0.5s;
@@ -55,7 +105,7 @@ body {
 
 .message .button {
     border-radius: 4px;
-    background-color: #A9081C;
+    background-color: #5DF5E6;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -69,26 +119,24 @@ body {
 }
 
 
-/* Small */
+/* Footer */
 
-@media screen and (max-width: 736px) {
-    .main {
-        font-size: 10px;
-    }
-    .button {
-        font-size: 10px;
-        padding: 10px;
-        width: 100px;
-    }
-    .message {
-        display: none;
-        font-size: 10px;
-    }
-    .message .button {
-        font-size: 10px;
-        padding: 10px;
-        width: 100px;
-    }
+#footer {
+    padding: 2.5em 1em;
+    height: 10vh;
+    text-align: center;
+    background: linear-gradient(to bottom right, #9EED72, #6AEBC3);
+    display: block;
+}
+
+#footer .icons {
+    margin: 1em 0 0 0;
+}
+
+#footer a {
+    font-size: 0.9em;
+    margin-right: 2em;
+    color: #171717;
 }
 
 
@@ -124,3 +172,26 @@ body {
 @media screen and (max-width: 480px) {}
 
 */
+
+
+/* Small */
+
+@media screen and (max-width: 736px) {
+    .main {
+        font-size: 10px;
+    }
+    button {
+        font-size: 10px;
+        padding: 10px;
+        width: 100px;
+    }
+    .message {
+        display: none;
+        font-size: 10px;
+    }
+    .message .button {
+        font-size: 10px;
+        padding: 10px;
+        width: 100px;
+    }
+}
